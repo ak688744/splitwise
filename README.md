@@ -10,7 +10,7 @@
     Wait for all dependecies to get downloaded
     Right click on DemoApplication.java File and click on Run
 ### Option2:
-    Download demo-0.0.1-SNAPSHOT.jar from the repo
+    Download demo-0.0.1-SNAPSHOT.jar from the mail
     Run below command to start the application
         java -jar {Download_path}/demo-0.0.1-SNAPSHOT.jar
         
