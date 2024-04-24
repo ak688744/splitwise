@@ -18,3 +18,80 @@
         java -jar /Users/vaibhav/Downloads/demo/build/libs/demo-0.0.1-SNAPSHOT.jar
 
 
+#### LLD Discussion
+    Splitwise:
+
+Requirements:
+
+createUser(String name): 
+createGroup(String name, String userName)
+addPeopleInGroup(String groupName, List<String> userName)
+removePeopleInGroup(String groupName, List<String> userName) -- OPtional
+
+AddExpenses -- ExpenseType (Percentage, EQUAL, UNEQUAL)
+addExpense(createExpenseRequest)
+modifyExpense(createExpenseRequest)
+deleteExpense(String title)
+
+showBalances - (String name, UserLevel/Group Level)
+ShowLedger(String name, UserLevel/GroupLevel))
+settleUpBalances(String borrower, String lender, DOuble amount, String user/Group, String groupName)
+simplifyDebt -- Optional
+
+
+ApiRequestModel:
+	createExpenseRequest {
+		String title;
+		List<ExpenseDetail> borrower;
+		List<ExpenseDetail> paidUsed
+		ExpenseType expenseType;
+		Double totalAmount;
+		ExpenseDetail{
+			String userName;
+			Integer value;
+		}
+	}
+
+Entities: 
+
+User {
+	String name;
+}
+
+Group {
+	String name; 
+}
+
+UserGroupMapping{
+	String userName;
+	String groupName;
+}
+
+Expense {
+	String createdBy;
+	Double amount;
+	ExpenseType expenseType;
+	String groupName;
+	String title;
+	List<Transaction> transaction;
+}
+
+Transaction {
+	String lenderUser;
+	String borrowerUser;
+	Double amount;
+	
+}
+
+
+Credit {
+	String createdBy
+	Double amount;
+	String groupName;
+	List<Dues> dues
+}
+
+
+
+
+
