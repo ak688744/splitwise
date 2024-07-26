@@ -75,10 +75,12 @@ public class LedgerResponse {
     }
 
     public void setCreatedByUser(String createdByUser) {
+
         this.createdByUser = createdByUser;
     }
 
     public Double getAmount() {
+
         return amount;
     }
 
