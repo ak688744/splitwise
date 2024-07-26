@@ -8,6 +8,8 @@ public class CreateUser {
     }
 
     public CreateUser() {
+
+
     }
 
     public String getUserName() {
