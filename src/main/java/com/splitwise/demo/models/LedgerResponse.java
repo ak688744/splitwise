@@ -80,6 +80,7 @@ public class LedgerResponse {
     }
 
     public Double getAmount() {
+
         return amount;
     }
 
