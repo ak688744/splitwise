@@ -60,6 +60,8 @@ public class LedgerResponse {
     }
 
     public String getTitle() {
+
+
         return title;
     }
 
@@ -68,6 +70,7 @@ public class LedgerResponse {
     }
 
     public String getCreatedByUser() {
+
         return createdByUser;
     }
 
