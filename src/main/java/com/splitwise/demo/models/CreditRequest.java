@@ -11,6 +11,7 @@ public class CreditRequest {
         this.payeeUser = payeeUser;
         this.amount = amount;
         this.groupName= groupName;
+
     }
 
     public CreditRequest() {
