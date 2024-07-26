@@ -60,6 +60,8 @@ public class LedgerResponse {
     }
 
     public String getTitle() {
+
+
         return title;
     }
 
