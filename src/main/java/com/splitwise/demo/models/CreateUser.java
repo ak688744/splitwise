@@ -4,6 +4,7 @@ public class CreateUser {
     String userName;
 
     public CreateUser(String userName) {
+
         this.userName = userName;
     }
 
